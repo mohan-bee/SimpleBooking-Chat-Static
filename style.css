@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    background-image: url('./images/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.mobile{
+    width: 335px;
+    height: 642px;  
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left:18%;
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.158);
+    
+}
+.page {
+    display: flex;
+
+}
+.content{
+    width:35%;
+
+    height: fit-content;
+    display: block;
+    margin: auto auto;
+}
+.content > h1{
+    margin: 20px 0;
+    margin-top: 50px;
+    color: #060015;
+    font-weight: 500;
+}
+.content > p{
+    font-size: 12px;
+    color: #B8B8BA;
+    line-height: 23px;
+    text-align: center;
+
+}
+.screen{
+
+ width: 300px;
+    height: 600px;
+    background-color:hsl(270, 20%, 96%);
+    border-radius: 30px;
+    position: relative;
+
+}
+.navbar{
+    width: 300px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    height: 15%;
+    border-radius: 30px 30px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    padding-top: 20px;
+    position: relative;
+
+    
+}
+.notch{
+    background-color: #fff;
+    width: 180px;
+    height: 30px;
+    position:absolute;
+    border-radius: 15px;
+    top: -10px;
+
+    
+}
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+.avatar-info{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.navbar i:nth-child(3){
+    transform: rotateZ(90deg);
+}
+.info > h3{
+    font-size: 16px;
+}
+.info > p{
+   color: hsl(276, 100%, 81%);
+   font-size: 12px;
+}
+i{
+    margin: 0 20px;
+}
+
+.text1 p, .text4 p, .walk1, .walk2{
+    color:hsl(276, 55%, 52%);
+    background-color:hsl(277, 33%, 92%);
+
+    width: 60%;
+    border-radius: 12px 12px 12px 4px;
+    padding: 10px;
+    font-size: 12px;
+    margin: 8px 0;
+    margin-left:10px ;
+
+}
+.walk1, .walk2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: #fff;
+}
+.walk1-info, .walk2-info{
+    display: flex;
+    align-items: center;
+}
+.walk1-info > span, .walk2-info > span{
+    margin-right: 0px;
+    margin-left: 20px;
+
+}
+
+.dogs{
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+.dogs img{
+    width: 45px;
+    margin: 0 5px;
+    border-radius: 10px;
+
+}
+.text2 > p, .text3 > p{
+    width: 60%;
+    color: hsl(271, 15%, 43%);
+    background-color:#fff;
+    box-shadow: 0 0 5px 0 hsla(271, 15%, 43%, 0.119);
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right:10px ;
+    border-radius: 12px 12px 4px 12px;
+}
+.text2, .text3{
+
+    display: flex;
+    justify-content: end;
+
+}
+
+.textbox{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 35px;
+    border-radius: 15px;
+ 
+}
+.textbox > input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-radius: 15px 0 0 15px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.textbox > button {
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    height:25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    font-size: 12px;
+    color: hsl(206, 6%, 79%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+
+      background-position: cover;
+    }
+    .page{
+        display: block;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .mobile{
+        margin-top: 20px;
+        display: flex;
+        margin-right:auto;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 600px; 
+    }
+    .screen{
+        width: 250px;
+        height: 550px; 
+
+    }
+    .navbar{
+        width: 250px;
+    }
+    .avatar-info {
+        margin-right: 0px;
+
+    }
+    .navbar  i{
+        font-size: 15px;
+    }
+    .avatar-info img{
+        width: 30px;
+
+    }
+    .avatar-info >.info > h3{
+        font-size: 14px;
+    }
+    .avatar-info >.info > p{
+        font-size: 8px;
+    }
+    .notch{
+        top: -10px;
+    }
+    .content > h1{
+        font-size: 24px;
+    }
+    .content > p{
+        font-size: 12px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .text2 > p, .text3 > p{
+        width: 60%;
+      
+        padding: 8px;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-right:10px ;
+
+    }
+    .textbox{
+        margin-top:30px ;
+    }
+    .dogs img{
+        width: 40px;
+    }
+    .text1 p, .text4 p, .walk1, .walk2{
+        
+ 
+        padding: 8px;
+        font-size: 10px;
+        margin: 10px 0;
+        margin-left:10px ;
+    
+    }
+    .content{
+
+        width:70%;
+    }
+  }
